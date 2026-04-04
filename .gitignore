@@ -1,0 +1,30 @@
+# Python / Flask (всё внутри backend)
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/seed/__pycache__/
+
+# React / Node.js
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# Файлы с секретами
+backend/.env
+.env
+
+# Базы данных (если есть)
+*.db
+*.sqlite
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log

@@ -1,0 +1,32 @@
+@import './variables.scss';
+@import './Pages.scss';
+
+.map-page {
+    @extend .page-base;
+
+    .map-selection {
+        h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: $color-black;
+        }
+    }
+
+    .map-card {
+        @extend .selection-card;
+
+        &.map-card img {
+            width: 220px;
+            height: 180px;
+            object-fit: cover;
+        }
+    }
+
+    .results {
+        @extend .results-base;
+
+        .map-name {
+            display: block;
+        }
+    }
+}

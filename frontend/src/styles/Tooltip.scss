@@ -1,0 +1,14 @@
+.tooltip-base {
+    line-height: 1.5;
+    padding: 12px 16px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: max-content;
+    text-align: left;
+    z-index: 10000;
+    pointer-events: none;
+    white-space: normal;    /*перенос строки*/
+    word-wrap: break-word;  /*перенос длинных слов*/
+    word-break: break-word; /*дополнительная защита переноса слов*/
+    hyphens: auto;          /*перенос по слогам*/
+}
