@@ -27,28 +27,10 @@ const CounterPickPage = () => {
 
     // if (error) return <ErrorMessage error={error}/>
 
-    const [toast, setToast] = useState(null);
-
-    React.useEffect(()=> {
-        if (error) {
-            setToast({
-                message: error,
-                type: 'error'
-            });
-        }
-    }, [error]);
-
     if (loading) return <LoadingSpinner />;
 
     return (
         <div className="counter-page">
-            {toast && (
-                <Toast 
-                    message={toast.message}
-                    type={toast.type}
-                    onClose={()=> setToast(null)}
-                />
-            )}
             <div className="two-column-layout">
                 <div className="info-block">
                     <h2>Как это работает?</h2>

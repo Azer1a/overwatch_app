@@ -18,3 +18,5 @@ const Toast = ({ message, type = 'error', onClose, duration = 5000}) => {
         </div>
     );
 };
+
+export default Toast;

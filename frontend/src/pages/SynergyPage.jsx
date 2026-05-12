@@ -18,29 +18,11 @@ const SynergyPickPage = () => {
         handelTanksSelect,
         resetSelection
     } = useSynergyPick();
-
-    const [toast, setToast] = useState(null);
-        
-        React.useEffect(()=> {
-            if (error) {
-                setToast({
-                    message: error,
-                    type: 'error'
-                });
-            }
-        }, [error]);
     
     if (loading) return <LoadingSpinner />
 
     return (
         <div className="synergy-page">
-            {toast && (
-                    <Toast 
-                        message={toast.message}
-                        type={toast.type}
-                        onClose={()=> setToast(null)}
-                    />
-                )}
             <div className="two-column-layout">
                 <div className="left-content">
                     <img src="/images/icons/supports.png" />

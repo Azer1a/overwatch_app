@@ -22,29 +22,11 @@ const MapPickPage = () => {
         handleMapSelect,
         resetSelection
     } = useMapPick();
-
-    const [toast, setToast] = useState(null);
-    
-    React.useEffect(()=> {
-        if (error) {
-            setToast({
-                message: error,
-                type: 'error'
-            });
-        }
-    }, [error]);
     
     if (loading) return <LoadingSpinner />;
 
     return(
         <div className="map-page">
-            {toast && (
-                    <Toast 
-                        message={toast.message}
-                        type={toast.type}
-                        onClose={()=> setToast(null)}
-                    />
-                )}
             <div className="info-block">
                 <h2>Как это работает</h2>
                 <p>
