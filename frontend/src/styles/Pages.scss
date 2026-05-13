@@ -4,7 +4,7 @@
     width: 100%;
     max-width: 1200px;
     margin-top: 1.5rem;
-    padding: 2rem;
+    padding: 2rem 0rem;
     display: flex;
     flex-direction: column;
 }
@@ -242,7 +242,7 @@
         line-height: 1.5;
         text-align: center;
         color: $color-black;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .role-info {

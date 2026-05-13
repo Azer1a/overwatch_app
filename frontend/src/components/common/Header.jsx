@@ -19,7 +19,7 @@ const Header = ({navigate, currentPage}) => {
                         href="#"
                         onClick={(e) => {e.preventDefault(); navigate('synergy');}}
                     >
-                        Синергия
+                        Исцеление танка
                     </a>
                     <a 
                         href="#"

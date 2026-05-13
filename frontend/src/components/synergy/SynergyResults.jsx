@@ -15,7 +15,7 @@ const SynergyResults = ({tank, synergies}) => {
     
     return (
         <div className="results-base">
-            <h3>Лучшие саппорты для {tank?.name}</h3>
+            <h3>Лучшие саппорты для <br/>{tank?.name}</h3>
 
             <CategorySelection
                 title="Лучший"
