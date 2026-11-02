@@ -1,0 +1,15 @@
+CREATE USER app_overwatch_admin WITH PASSWORD 'Overwatch4231!';
+
+GRANT CONNECT ON DATABASE overwatch TO app_overwatch_admin;
+
+GRANT USAGE ON SCHEMA public TO app_overwatch_admin;
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO app_overwatch_admin;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO app_overwatch_admin;
+
+GRANT USAGE ON ALL SEQUENCES IN SCHEMA public TO  app_overwatch_admin;
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+GRANT USAGE ON SEQUENCES TO  app_overwatch_admin;
