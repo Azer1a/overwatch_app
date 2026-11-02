@@ -8,7 +8,7 @@ def get_db_connection():
         host='localhost',
         database='overwatch',
         user='app_overwatch_admin',
-        password='Overwatch4231!'
+        password='your_password_here'
     )
     return conn
 

@@ -1,4 +1,4 @@
-CREATE USER app_overwatch_admin WITH PASSWORD 'Overwatch4231!';
+CREATE USER app_overwatch_admin WITH PASSWORD 'password_here';
 
 GRANT CONNECT ON DATABASE overwatch TO app_overwatch_admin;
 
